@@ -12,7 +12,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
@@ -30,4 +29,8 @@ public class Sale {
 	private Double amount;
 	
 	private LocalDate date;
+	
+	public Sale() {
+		
+	}
 }
